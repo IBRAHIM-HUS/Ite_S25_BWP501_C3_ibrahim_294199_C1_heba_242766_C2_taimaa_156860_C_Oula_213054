@@ -1,0 +1,282 @@
+/* التعديل الجديد للألوان */
+:root {
+    --primary-color: #001e4b;    /* اللون الأساسي - أزرق غامق */
+    --secondary-color: #fd7e14;  /* لون التمييز - برتقالي */
+    --light-color: #f8f9fa;      /* لون الخلفيات الفاتحة */
+    --dark-color: #212529;       /* لون النصوص الغامقة */
+    --accent-blue: #68a1da;      /* أزرق فاتح للتفاصيل */
+}
+
+body {
+    font-family: 'Tajawal', 'Cairo', sans-serif;
+    line-height: 1.6;
+    color: #192d86; /* لون الخط الأساسي المتناسق مع الهوية الجديدة */
+    background-color: var(--light-color);
+}
+
+/* تحديث أزرار الموقع لتتناسب مع الألوان الجديدة */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* تنسيق شريط التنقل */
+.navbar.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+/* تخصيص الألوان */
+
+.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    color: rgb(239, 171, 171);
+}
+
+
+/* تخصيص Navbar */
+
+
+
+/* تخصيص البطاقات */
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+}
+
+/* تخصيص Carousel */
+
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+/* تخصيص الأزرار */
+
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+}
+
+
+/* تخصيص الفوتر */
+
+footer {
+    margin-top: auto;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-color) !important;
+}
+
+.social-links i {
+    font-size: 1.5rem;
+}
+
+
+/* تخصيص الفلاتر */
+
+.category-filter {
+    margin-bottom: 0.5rem;
+}
+
+
+/* تخصيص النماذج */
+
+.form-control {
+    border-radius: 8px;
+    padding: 0.75rem;
+}
+
+.form-label {
+    font-weight: 500;
+}
+
+
+/* تأثيرات للعناصر التفاعلية */
+
+.event-card {
+    cursor: pointer;
+}
+
+
+/* تصميم متجاوب إضافي */
+
+@media (max-width: 768px) {
+    .hero-section .display-4 {
+        font-size: 2rem;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+}
+
+.btn-social {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* تخصيص البطاقات في صفحة عنا */
+
+.team-card .card-img-top {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+/* تخصيص Accordion في صفحة عنا */
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+
+/* تخصيص الخريطة في صفحة اتصل بنا */
+
+.ratio iframe {
+    border-radius: 8px;
+}
+
+
+/* تخصيص نموذج الاتصال */
+
+.form-label {
+    font-weight: 600;
+}
+
+
+/* تخصيص Pagination في صفحة الفعاليات */
+
+.pagination .page-link {
+    color: var(--primary-color);
+}
+
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+/* تخصيص الفلاتر في صفحة الفعاليات */
+
+#categoryFilter,
+#dateFilter {
+    cursor: pointer;
+}
+
+
+/* تأثيرات للبطاقات في صفحة الفريق */
+
+.team-card {
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* تخصيص الأكورديون في صفحة السياسات */
+
+.accordion-button {
+    font-weight: 600;
+}
+
+
+/* تخصيص العناوين */
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+
+/* تخصيص الأزرار في صفحة التفاصيل */
+
+#addToCalendar,
+#shareEvent {
+    padding: 0.5rem 1.5rem;
+}
+
+
+/* تخصيص القوائم */
+
+ul,
+ol {
+    padding-right: 1.5rem;
+}
+
+
+/* تخصيص الروابط في الفوتر */
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: var(--secondary-color) !important;
+}
+.btn-custom {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 15px;
+    gap: 8px; 
+    font-family: 'Cairo', sans-serif;
+}
+
+.btn-icon {
+    width: 20px;  /* عرض ثابت */
+    height: 20px; /* ارتفاع ثابت */
+    object-fit: contain; /* يحافظ على أبعاد الصورة الأصلية */
+    display: inline-block;
+}
